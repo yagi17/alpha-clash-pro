@@ -28,7 +28,7 @@
 
         <!-- Play ground -->
 
-        <section id="playground" class="play-ground hidden">
+        <section id="playground" class="hidden">
             <div class="flex flex-col justify-center items-center min-h-screen gap-20">
                 <!-- screen -->
                 <div
@@ -99,16 +99,17 @@
 
         <!-- score -->
 
-        <section class="score hidden">
+        <section id="score" class=" hidden">
             <div class="flex justify-center items-center min-h-screen">
                 <div class="card w-96 shadow-xl ">
-                    <div class="card-body items-center bg-[#FFFFFF33] text-center rounded-lg">
+                    <div class="card-body text-white  items-center bg-[#FFFFFF33] text-center rounded-lg">
+                        <h1 class="text-3xl">Game Over!</h1>
                         <h2 class=" text-white card-title  text-6xl">
                             <span class="font-extrabold">Score:</span>
                             <span>14</span>
                         </h2>
                         <h1>
-                            <button class="btn bg-white text-black">
+                            <button onclick="play()" class="btn bg-white text-black">
                                 Play Again
                             </button>
                         </h1>
